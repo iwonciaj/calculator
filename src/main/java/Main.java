@@ -8,9 +8,11 @@ public class Main {
         }
         System.out.println(list);*/
         Window window = new Window();
-
+        String string;
         window.setFrame();
-
+        RPNconverter converter =new RPNconverter();
+        string="3+4*2/(1−5)^2^3";//tytaj można wpisać działanie na razie tylko żeby przetestować czy działą
+        System.out.println(converter.RPNconverter(string));
 
 
     }
