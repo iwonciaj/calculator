@@ -118,7 +118,7 @@ public class Window {
 
         add.addActionListener(new OperatorActionListener("+",field));
         minus.addActionListener(new OperatorActionListener("-",field));
-        divide.addActionListener(new OperatorActionListener("÷",field));
+        divide.addActionListener(new OperatorActionListener("/",field));
         multiply.addActionListener(new OperatorActionListener("*",field));
         dot.addActionListener(new OperatorActionListener(".",field));
 
