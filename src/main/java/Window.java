@@ -1,8 +1,5 @@
-
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 
 public class Window {
 
@@ -105,22 +102,41 @@ public class Window {
         cos.setBackground(Color.gray);
         ctan.setBackground(Color.gray);
 
-        button0.addActionListener(new NumericButtonActionListeners(0, field));
-        button9.addActionListener(new NumericButtonActionListeners(9,field));
-        button8.addActionListener(new NumericButtonActionListeners(8,field));
-        button7.addActionListener(new NumericButtonActionListeners(7,field));
-        button6.addActionListener(new NumericButtonActionListeners(6,field));
-        button5.addActionListener(new NumericButtonActionListeners(5,field));
-        button4.addActionListener(new NumericButtonActionListeners(4,field));
-        button3.addActionListener(new NumericButtonActionListeners(3,field));
-        button2.addActionListener(new NumericButtonActionListeners(2,field));
-        button1.addActionListener(new NumericButtonActionListeners(1,field));
+        button0.addActionListener(new ButtonActionListeners("0", field));
+        button9.addActionListener(new ButtonActionListeners("9",field));
+        button8.addActionListener(new ButtonActionListeners("8",field));
+        button7.addActionListener(new ButtonActionListeners("7",field));
+        button6.addActionListener(new ButtonActionListeners("6",field));
+        button5.addActionListener(new ButtonActionListeners("5",field));
+        button4.addActionListener(new ButtonActionListeners("4",field));
+        button3.addActionListener(new ButtonActionListeners("3",field));
+        button2.addActionListener(new ButtonActionListeners("2",field));
+        button1.addActionListener(new ButtonActionListeners("1",field));
 
-        add.addActionListener(new OperatorActionListener("+",field));
-        minus.addActionListener(new OperatorActionListener("-",field));
-        divide.addActionListener(new OperatorActionListener("/",field));
-        multiply.addActionListener(new OperatorActionListener("*",field));
-        dot.addActionListener(new OperatorActionListener(".",field));
+        add.addActionListener(new ButtonActionListeners("+",field));
+        minus.addActionListener(new ButtonActionListeners("-",field));
+        divide.addActionListener(new ButtonActionListeners("/",field));
+        multiply.addActionListener(new ButtonActionListeners("*",field));
+        dot.addActionListener(new ButtonActionListeners(".",field));
+
+        nawiasLewy.addActionListener(new ButtonActionListeners("(",field));
+        nawiasPrawy.addActionListener(new ButtonActionListeners(")",field));
+        log.addActionListener(new ButtonActionListeners("log(",field));
+        pi.addActionListener(new ButtonActionListeners("3.1415926535897",field));
+        potega.addActionListener(new ButtonActionListeners("^",field));
+        silnia.addActionListener(new ButtonActionListeners("!",field));
+        sqt.addActionListener(new ButtonActionListeners("sqt(",field));
+        tan.addActionListener(new ButtonActionListeners("tan(",field));
+        ctan.addActionListener(new ButtonActionListeners("ctan(",field));
+        sin.addActionListener(new ButtonActionListeners("sin(",field));
+        cos.addActionListener(new ButtonActionListeners("cos(",field));
+        buttonPercent.addActionListener(new ButtonActionListeners("*1/100",field));
+
+        equal.addActionListener(new EqualsListener("",field));
+
+        ac.addActionListener(new AcListener(field));
+
+        delete.addActionListener(new DelListener(field));
 
         frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         frame.setVisible(true);

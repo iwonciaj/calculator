@@ -1,27 +1,22 @@
 
-
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class OperatorActionListener implements ActionListener {
+public class ButtonActionListeners implements ActionListener {
 
-    private String action;
+    private String number;
     private JTextField field;
 
-    public OperatorActionListener(String action, JTextField filed) {
-        this.action=action;
-        this.field=filed;
+    public ButtonActionListeners(String number, JTextField textField) {
+        this.number = number;
+        this.field = textField;
     }
-
-
 
     @Override
     public void actionPerformed(ActionEvent e) {
         String currentText = field.getText();
-        currentText += action;
+        currentText += number;
         field.setText(currentText);
-
-
     }
 }

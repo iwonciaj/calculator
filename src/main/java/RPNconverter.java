@@ -8,10 +8,12 @@ public class RPNconverter {
         char[] ch = str.toCharArray();
         if ((ch[0] >= 'a' && ch[0] <= 'z')) {
             return true;
-        } else {
+        } else if (ch[0]=='!'){
+            return true;
+
+        }else {
             return false;
         }
-
 
     }
 
