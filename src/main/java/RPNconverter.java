@@ -73,7 +73,7 @@ public class RPNconverter {
     }
 
 
-    static Stack<String> RPNconverter(String s) {
+    public static Stack<String> RPNconverter(String s) {
 
 
         String g = "   ";

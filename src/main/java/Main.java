@@ -6,7 +6,7 @@ public class Main {
         }
         System.out.println(list);*/
         Window window = new Window();
-        String string;
+
         window.setFrame();
       /*  RPNconverter converter =new RPNconverter();
         string="30.1+4*2/(1−5)^2^3";//tytaj można wpisać działanie na razie tylko żeby przetestować czy działą.Jak coś tp przecinek jest w formi kropki
