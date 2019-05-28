@@ -42,10 +42,11 @@ public class EndOfTheLine {
     }
 
     static double tan(double a){
+
         return Math.tan(Math.toRadians(a));
     }
-    static double ctan(double a) {
-        return 1/Math.tan(Math.toRadians(a));
+    static double cbrt(double a) {
+        return Math.cbrt(a);
     }
     static double log(double a) {
         return Math.log10(a);
@@ -60,7 +61,7 @@ public class EndOfTheLine {
 
             case "tan":
                 return true;
-            case "ctan":
+            case "cbrt":
 
                 return true;
             case "!":
@@ -83,8 +84,8 @@ public class EndOfTheLine {
 
             case "tan":
                 return tan(a);
-            case "ctan":
-                return ctan(a);
+            case "cbrt":
+                return cbrt(a);
 
             case "!":
                 return silnia(a);

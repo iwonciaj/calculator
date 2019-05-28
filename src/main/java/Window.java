@@ -35,7 +35,7 @@ public class Window {
     JButton sin = new JButton("sin");
     JButton cos = new JButton("cos");
     JButton tan = new JButton("tan");
-    JButton ctan = new JButton("ctan");
+    JButton ctan = new JButton("cbrt");
     JButton nawiasLewy = new JButton("(");
     JButton nawiasPrawy = new JButton(")");
     JButton log = new JButton("log");
@@ -127,7 +127,7 @@ public class Window {
         silnia.addActionListener(new ButtonActionListeners("!",field));
         sqt.addActionListener(new ButtonActionListeners("sqt(",field));
         tan.addActionListener(new ButtonActionListeners("tan(",field));
-        ctan.addActionListener(new ButtonActionListeners("ctan(",field));
+        ctan.addActionListener(new ButtonActionListeners("cbrt(",field));
         sin.addActionListener(new ButtonActionListeners("sin(",field));
         cos.addActionListener(new ButtonActionListeners("cos(",field));
         buttonPercent.addActionListener(new ButtonActionListeners("*1/100",field));
